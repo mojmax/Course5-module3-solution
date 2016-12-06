@@ -18,7 +18,28 @@
     <div class="form-group narrow-button">
       <button ng-click="ctrl.searchItems(ctrl.searchTerm)" class="btn btn-primary">Narrow It Down For Me!</button>
     </div>
-    {{ ctrl.found }}
+     <!-- {{ ctrl.found }} -->
+    <!-- <found-items
+
+        items="ctrl.found"
+
+        on-remove="ctrl.removeItem(index)">
+
+         <span class="warning">WARNING! WARNING! {{list.warning}}</span>
+
+      </found-items>
+    -->
+    <div class="container fluid" >
+
+
+
+      <ol>
+        <li ng-repeat="item in ctrl.found">
+          {{ item.name }}
+          <button ng-click="ctrl.RemoveItem( $index);">Don't want this one!</button>
+        </li>
+      </ol>
+</div>
     <!-- found-items should be implemented as a component -->
     <!-- <found-items items="ctrl.found" on-remove="....">
       <ol>
