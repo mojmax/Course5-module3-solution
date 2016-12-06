@@ -34,7 +34,6 @@
         console.log(error);
       })
     };
-
     ctrl.RemoveItem = function (itemIndex) {
       ctrl.found.splice(itemIndex, 1);
     };
