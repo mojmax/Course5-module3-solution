@@ -21,6 +21,7 @@
     <br/>
       <found-items items="ctrl.found" on-remove="ctrl.removeItem(index)">
       </found-items>
+      <h1 class="bg-danger ng-binding ng-scope" ng-if="ctrl.found.length == 0">Nothing found</h1>
   </div>
 
 </body>
